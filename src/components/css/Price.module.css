@@ -1,0 +1,40 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 510px;
+    text-align: center;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 50px 50px;
+    cursor: pointer;
+    box-shadow: -1px 1px 15px 1px rgba(0, 0, 0, 0.4);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    margin-right: 20px;
+}
+
+.card.active {
+    z-index: 2;
+    transform: translateX(0) translateZ(0) scale(1);
+    opacity: 1;
+}
+
+.card.left {
+    z-index: 1;
+    transform: translateX(50px) translateZ(-100px) scale(0.8);
+    opacity: 0.95;
+}
+
+.card.right {
+    z-index: 1;
+    transform: translateX(-50px) translateZ(-100px) scale(0.8);
+    opacity: 0.95;
+}

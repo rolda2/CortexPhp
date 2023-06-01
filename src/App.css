@@ -1,0 +1,90 @@
+#HalfCircle {
+    background: url(./img/test1.png) no-repeat bottom 22% right 37%;
+    width: 100%;
+    height: 100%;
+    background-size: 5%;
+    position: absolute;
+    transform: translateY(0);
+
+}
+
+#FullCircle {
+    background: url(./img/test3.png) no-repeat top 17% right;
+    width: 100%;
+    height: 100%;
+    background-size: 33%;
+    position: absolute;
+    transform: translateX(0);
+}
+
+#row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-bottom: 20px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+#label {
+    position: absolute;
+    color: #f55d4b;
+    width: 100%;
+    left: 0.75rem;
+    top: 0;
+    font-size: 1rem;
+    cursor: text;
+    transition: transform 0.2s ease-out, color 0.2s ease-out;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    transform: translateY(12px);
+}
+
+input:focus + #label, input:not(:placeholder-shown) + #label {
+    transform: translateY(-14px) scale(0.8);
+    transform-origin: 0;
+}
+
+#input input:not(:placeholder-shown) {
+    border-color: #4caf50;
+}
+
+#input input:invalid {
+    border-color: red;
+}
+
+#input {
+    width: 100%;
+    left: auto;
+    right: auto;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    min-height: 1px;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#input input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: box-shadow 0.3s, border 0.3s;
+    overflow: visible;
+    line-height: 1.15;
+}
+
+#input input:focus {
+    border-bottom: 1px solid #f55d4b;
+    box-shadow: 0 1px 0 0 #f55d4b;
+}

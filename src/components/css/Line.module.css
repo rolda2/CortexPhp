@@ -1,0 +1,29 @@
+#line {
+    width: 0;
+    position: absolute;
+    height: 5px;
+    background: #f55d4b;
+    transition-property: all;
+    transition-duration: 500;
+}
+
+.line1 {
+    width: 70%;
+    position: absolute;
+    height: 5px;
+    background: #f55d4b;
+}
+
+.line2 {
+    width: 90%;
+    position: absolute;
+    height: 5px;
+    background: #f55d4b;
+}
+
+.line3 {
+    width: 85%;
+    position: absolute;
+    height: 5px;
+    background: #f55d4b;
+}
